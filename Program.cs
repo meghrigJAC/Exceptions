@@ -20,7 +20,7 @@
 
                 for (int i = 0; i < countOfScores; i++)
                 {
-                    Console.Write("Enter score {0}: ", i + 1);
+                    Console.Write($"Enter score {i + 1} ");
                     inValue = Console.ReadLine();
                     examScore[i] = int.Parse(inValue);
                     totalScores += i;
@@ -35,7 +35,7 @@
             }
             //add a finally
 
-            ReadKey();
+           
 
         }
     }
