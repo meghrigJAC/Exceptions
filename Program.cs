@@ -9,10 +9,9 @@
             int countOfScores = 0;
             string inValue;
             double averageTestScore;
+            int numberOfScores = 0;
 
-
-            try
-            {
+            
                 Console.Write("How many scores will you enter? ");
                 inValue = Console.ReadLine();
                 countOfScores = int.Parse(inValue);
@@ -26,16 +25,8 @@
                     totalScores += i;
                 }
 
-                averageTestScore = totalScores / countOfScores;
-                Console.WriteLine("Average is {0}", averageTestScore);
-            }
-            catch (Exception e)
-            {
-                //TODO
-            }
-            //add a finally
-
-           
+                averageTestScore = totalScores / numberOfScores;
+                Console.WriteLine("Average is {0}", averageTestScore);   
 
         }
     }
